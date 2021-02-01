@@ -88,54 +88,63 @@
           <div class="container">
             <div class="message mt-11 mt-lg-12">
               <div class="container-md">
-                <form class="mb-12" id="messageForm">
-                  <fieldset>
-                    <legend class="mb-8 fs-3 text-center">
-                      {{ $t('GENERAL.NAV_OPTIONS[3]') }}
-                    </legend>
-                    <div class="row mb-6">
-                      <div class="col-12 col-lg-4 mb-4">
-                        <label for="name" class="form-label fs-5 fw-light">{{
-                          $t('CONTACT.NAME')
-                        }}</label>
-                        <input type="text" class="form-control" id="name" v-model="name" />
+                <validation-observer v-slot="{ invalid }">
+                  <form class="mb-12" id="messageForm">
+                    <fieldset>
+                      <legend class="mb-8 fs-3 text-center">
+                        {{ $t('GENERAL.NAV_OPTIONS[3]') }}
+                      </legend>
+                      <div class="row mb-6">
+                        <div class="col-12 col-lg-4 mb-4">
+                          <validation-provider rules="required" v-slot="{ errors }">
+                            <label for="name" class="form-label fs-5 fw-light">{{
+                              $t('CONTACT.NAME')
+                            }}</label>
+                            <input type="text" class="form-control" id="name" v-model="name" />
+                            <span class="text-danger">{{ errors[0] }}</span>
+                          </validation-provider>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-4">
+                          <validation-provider name="email" rules="required|email" v-slot="{ errors }">
+                          <label for="exampleInputEmail1" class="form-label fs-5 fw-light">{{
+                            $t('CONTACT.EMAIL')
+                          }}</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            v-model="email"
+                          />
+                          <span class="text-danger">{{ errors[0] }}</span>
+                          </validation-provider>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-4">
+                          <label for="subject" class="form-label fs-5 fw-light">{{
+                            $t('CONTACT.SUBJECT')
+                          }}</label>
+                          <input type="text" class="form-control" id="subject" v-model="subject" />
+                        </div>
                       </div>
-                      <div class="col-12 col-lg-4 mb-4">
-                        <label for="exampleInputEmail1" class="form-label fs-5 fw-light">{{
-                          $t('CONTACT.EMAIL')
-                        }}</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                          v-model="email"
-                        />
-                      </div>
-                      <div class="col-12 col-lg-4 mb-4">
-                        <label for="subject" class="form-label fs-5 fw-light">{{
-                          $t('CONTACT.SUBJECT')
-                        }}</label>
-                        <input type="text" class="form-control" id="subject" v-model="subject" />
-                      </div>
-                    </div>
 
-                    <div class="mb-8">
-                      <label for="message" class="form-label fs-5 fw-light">{{
-                        $t('CONTACT.MESSAGE')
-                      }}</label>
-                      <textarea type="text" class="form-control" id="message" v-model="message" />
-                    </div>
+                      <div class="mb-8">
+                        <label for="message" class="form-label fs-5 fw-light">{{
+                          $t('CONTACT.MESSAGE')
+                        }}</label>
+                        <textarea type="text" class="form-control" id="message" v-model="message" />
+                      </div>
 
-                    <button
-                      type="submit"
-                      class="btn btn-lg btn-outline-dark border-2 fs-6 px-6"
-                      @click.prevent="sendEmail()"
-                    >
-                      {{ $t('CONTACT.SUBMIT') }}
-                    </button>
-                  </fieldset>
-                </form>
+                      <button
+                        type="submit"
+                        class="btn btn-lg btn-outline-dark border-2 fs-6 px-6"
+                        :disabled="invalid"
+                        @click.prevent="sendEmail()"
+                      >
+                        {{ $t('CONTACT.SUBMIT') }}
+                      </button>
+                    </fieldset>
+                  </form>
+                </validation-observer>
                 <hr />
               </div>
             </div>
@@ -152,6 +161,31 @@
         </div>
       </main>
     </div>
+
+    <div
+      class="modal fade"
+      id="emailModal"
+      tabindex="-1"
+      aria-labelledby="emailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="emailModalLabel">
+              <i class="bi bi-chat-left-text-fill ms-2 me-4"></i>{{ modalMessage }}
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <Footer></Footer>
   </div>
 </template>
@@ -159,6 +193,8 @@
 <script>
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Email from '@/assets/js/smtp.js';
+import Modal from 'bootstrap/js/dist/modal';
 
 export default {
   name: 'App',
@@ -176,6 +212,31 @@ export default {
       message: '',
       modalMessage: ''
     };
+  },
+
+  methods: {
+    sendEmail() {
+      this.isLoading = true;
+      Email.send({
+        SecureToken: '26a67c6e-d769-46af-8565-78acadf6cefd',
+        To: 'azusa5526@gmail.com',
+        From: this.email,
+        Subject: `${this.name}: ${this.subject}`,
+        Body: this.message
+      })
+        .then(() => {
+          const emailModal = new Modal(document.getElementById('emailModal'));
+          this.modalMessage = 'Send message successfully';
+          this.isLoading = false;
+          emailModal.show();
+        })
+        .catch((error) => {
+          const emailModal = new Modal(document.getElementById('emailModal'));
+          this.modalMessage = `Send message fail ${error}`;
+          this.isLoading = false;
+          emailModal.show();
+        });
+    }
   },
 
   mounted() {
