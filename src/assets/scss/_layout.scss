@@ -9,7 +9,9 @@ main {
   flex-grow: 1;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   flex-shrink: 0;
 }
 

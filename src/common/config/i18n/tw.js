@@ -18,8 +18,10 @@ export const locale = {
     EMAIL: '您的電子郵件 (必填)',
     SUBJECT: '主題',
     MESSAGE: '訊息',
-    SUBMIT: '送出訊息',
+    SUBMIT: '送出訊息'
+  },
+  INFO: {
     COMPANY_NAME: '英屬維京群島商爍星有限公司台灣分公司',
-    ADDRESS: '新竹縣竹北市復興三路2段168號10樓之2'
+    COMPANY_ADDRESS: '新竹縣竹北市復興三路2段168號10樓之2'
   }
 };

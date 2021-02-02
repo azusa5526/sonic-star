@@ -18,8 +18,10 @@ export const locale = {
     EMAIL: 'Your Email (required)',
     SUBJECT: 'Subject',
     MESSAGE: 'Message',
-    SUBMIT: 'Submit',
+    SUBMIT: 'Submit'
+  },
+  INFO: {
     COMPANY_NAME: 'Sonic Star Global Ltd.',
-    ADDRESS: '10F.-2, No. 168, Sec. 2, Fuxing 3rd Rd., Zhubei City, Hsinchu County 302'
+    COMPANY_ADDRESS: '10F.-2, No. 168, Sec. 2, Fuxing 3rd Rd., Zhubei City, Hsinchu County 302'
   }
 };

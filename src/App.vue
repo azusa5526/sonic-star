@@ -8,13 +8,26 @@
         <div class="intro">
           <div class="container position-relative h-100">
             <div class="slogan d-flex flex-column align-items-center w-100 px-6">
-              <strong class="h1 text-white text-center">{{ $t('INTRO.TITLE') }}</strong>
-              <p class="text-light text-center fs-5 mt-4">
+              <strong
+                class="h1 text-white text-center wow animate__animated animate__fadeInUp"
+                data-wow-delay=".5s"
+                data-wow-duration=".5s"
+                >{{ $t('INTRO.TITLE') }}</strong
+              >
+              <p
+                class="text-light text-center fs-5 mt-4 wow animate__animated animate__fadeInUp"
+                data-wow-delay=".5s"
+                data-wow-duration=".5s"
+              >
                 {{ $t('INTRO.SUBTITLE') }}
               </p>
-              <a class="btn btn-lg btn-outline-white border-2 fs-6 px-10 mt-12" href="#">{{
-                $t('INTRO.JOIN_US')
-              }}</a>
+              <a
+                class="btn btn-lg btn-outline-white border-2 fs-6 px-10 mt-12 wow animate__animated animate__fadeInUp"
+                href="#"
+                data-wow-delay=".5s"
+                data-wow-duration=".5s"
+                >{{ $t('INTRO.JOIN_US') }}</a
+              >
             </div>
           </div>
           <div class="mask"></div>
@@ -40,44 +53,73 @@
         </div>
 
         <div id="jobs-anchor"></div>
-        <div class="jobs mt-12 mt-lg-13">
+        <div class="jobs pt-11 pb-12 pt-lg-12 pb-lg-13 mt-12 mt-lg-13">
           <div class="container-fluid">
             <div class="row no-gutters">
               <h3 class="mb-8 mb-md-11 text-center">{{ $t('GENERAL.NAV_OPTIONS[2]') }}</h3>
-              <div class="col-12 col-md-6 col-lg-3 p-0">
-                <div class="card bg-dark text-white">
-                  <img src="./assets/img/jobs_1.jpg" class="card-img transition" alt="..." />
-                  <div class="card-img-overlay">
-                    <h4 class="card-title absolute-center">Card title</h4>
-                  </div>
+              <div
+                class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
+                data-wow-duration=".5s"
+              >
+                <div class="ver_mas text-center">
+                  <span class=""></span>
                 </div>
+                <article class="text-left">
+                  <h4 class="text-white">Analog IP<br />Engineer</h4>
+                  <h6 class="text-white">Cadence virtuoso, Spectre, AMS.</h6>
+                </article>
+                <img
+                  src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
+                  alt=""
+                />
               </div>
-              <div class="col-12 col-md-6 col-lg-3 p-0">
-                <div class="card bg-dark text-white">
-                  <img src="./assets/img/jobs_1.jpg" class="card-img transition" alt="..." />
-                  <div class="card-img-overlay">
-                    <h4 class="card-title absolute-center">Card title</h4>
-                  </div>
+              <div
+                class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
+                data-wow-duration=".5s"
+              >
+                <div class="ver_mas text-center">
+                  <span class=""></span>
                 </div>
+                <article class="text-left">
+                  <h4 class="text-white">IC Layout<br />Engineer</h4>
+                  <h6 class="text-white">PLL, ADC, IO, SerDes, DDR, PMIC, Bandgap</h6>
+                </article>
+                <img
+                  src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
+                  alt=""
+                />
               </div>
-              <div class="col-12 col-md-6 col-lg-3 p-0">
-                <div class="card bg-dark text-white">
-                  <img src="./assets/img/jobs_1.jpg" class="card-img transition" alt="..." />
-                  <div class="card-img-overlay">
-                    <div class="absolute-center">
-                      <h4 class="card-title text-center">Card title</h4>
-                      <p class="card-text">contentcontentcontentcontentcontentcontent</p>
-                    </div>
-                  </div>
+              <div
+                class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
+                data-wow-duration=".5s"
+              >
+                <div class="ver_mas text-center">
+                  <span class=""></span>
                 </div>
+                <article class="text-left">
+                  <h4 class="text-white">Digital IP design<br />Engineer</h4>
+                  <h6 class="text-white">RTL, SystemVerilog, front-end design flow.</h6>
+                </article>
+                <img
+                  src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
+                  alt=""
+                />
               </div>
-              <div class="col-12 col-md-6 col-lg-3 p-0">
-                <div class="card bg-dark text-white">
-                  <img src="./assets/img/jobs_1.jpg" class="card-img transition" alt="..." />
-                  <div class="card-img-overlay">
-                    <h4 class="card-title absolute-center">Card title</h4>
-                  </div>
+              <div
+                class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
+                data-wow-duration=".5s"
+              >
+                <div class="ver_mas text-center">
+                  <span class=""></span>
                 </div>
+                <article class="text-left">
+                  <h4 class="text-white">More<br />Information</h4>
+                  <h6 class="text-white">Check out more about our job openings</h6>
+                </article>
+                <img
+                  src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -105,18 +147,22 @@
                           </validation-provider>
                         </div>
                         <div class="col-12 col-lg-4 mb-4">
-                          <validation-provider name="email" rules="required|email" v-slot="{ errors }">
-                          <label for="exampleInputEmail1" class="form-label fs-5 fw-light">{{
-                            $t('CONTACT.EMAIL')
-                          }}</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                            v-model="email"
-                          />
-                          <span class="text-danger">{{ errors[0] }}</span>
+                          <validation-provider
+                            name="email"
+                            rules="required|email"
+                            v-slot="{ errors }"
+                          >
+                            <label for="exampleInputEmail1" class="form-label fs-5 fw-light">{{
+                              $t('CONTACT.EMAIL')
+                            }}</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                              v-model="email"
+                            />
+                            <span class="text-danger">{{ errors[0] }}</span>
                           </validation-provider>
                         </div>
                         <div class="col-12 col-lg-4 mb-4">
@@ -151,9 +197,9 @@
 
             <div class="row">
               <div class="col-12 col-lg-10 offset-lg-1 d-flex flex-column align-items-center mb-8">
-                <p class="fs-5">{{ $t('CONTACT.COMPANY_NAME') }}</p>
+                <p class="fs-5">{{ $t('INFO.COMPANY_NAME') }}</p>
                 <p class="text-center fw-light">
-                  {{ $t('CONTACT.ADDRESS') }}
+                  {{ $t('INFO.COMPANY_ADDRESS') }}
                 </p>
               </div>
             </div>
@@ -248,4 +294,24 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/all.scss';
+</style>
+
+<style scoped>
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 8%, 0);
+    transform: translate3d(0, 8%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
 </style>
