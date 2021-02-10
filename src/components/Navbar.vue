@@ -2,7 +2,7 @@
   <header class="header">
     <nav
       class="navbar navbar-expand-md navbar-light fixed-top transition py-md-5 py-4"
-      :class="{ 'bg-trasparent': isTop, 'bg-white': !isTop }"
+      :class="{ 'bg-trasparent': isTop, 'bg-white shadowBottom': !isTop }"
     >
       <div class="container-fluid">
         <div class="d-flex align-items-center">

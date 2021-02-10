@@ -1,6 +1,6 @@
 <template>
   <footer class="footer mt-13">
-    <div class="decorate contaier-fluid bg-light"></div>
+    <div class="pre-footer contaier-fluid border-bottom border-primary border-4 bg-light"></div>
     <div class="container-fluid bg-dark">
       <div class="container">
         <div class="row align-items-start py-11 pb-md-12">

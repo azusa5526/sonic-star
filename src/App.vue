@@ -15,7 +15,7 @@
                 >{{ $t('INTRO.TITLE') }}</strong
               >
               <p
-                class="text-light text-center fs-5 mt-4 wow animate__animated animate__fadeInUp"
+                class="text-light text-center fw-light fs-5 mt-4 wow animate__animated animate__fadeInUp"
                 data-wow-delay=".5s"
                 data-wow-duration=".5s"
               >
@@ -37,7 +37,7 @@
         <div class="about mt-12 mt-lg-13">
           <div class="container">
             <div class="d-flex flex-column align-items-center w-100">
-              <h3 class="mb-8 mb-md-11">{{ $t('GENERAL.NAV_OPTIONS[1]') }}</h3>
+              <h3 class="text-dark fw-bold mb-8 mb-md-11">{{ $t('GENERAL.NAV_OPTIONS[1]') }}</h3>
               <p class="fs-4 fw-light lh-lg px-4 px-md-0">
                 Sonic Star Global Ltd. (Sonic Star) is a professional silicon intellectual property
                 (IP) provider, with its principal office located in Hsinchu, Taiwan. Our strength is
@@ -56,13 +56,15 @@
         <div class="jobs pt-11 pb-12 pt-lg-12 pb-lg-13 mt-12 mt-lg-13">
           <div class="container-fluid">
             <div class="row no-gutters">
-              <h3 class="mb-8 mb-md-11 text-center">{{ $t('GENERAL.NAV_OPTIONS[2]') }}</h3>
+              <h3 class="text-dark text-center fw-bold mb-8 mb-md-11">
+                {{ $t('GENERAL.NAV_OPTIONS[2]') }}
+              </h3>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <div class="ver_mas text-center">
-                  <span class=""></span>
+                <div class="ver_mas bg-primary text-center">
+                  <span class="text-dark fw-bold">MORE</span>
                 </div>
                 <article class="text-left">
                   <h4 class="text-white">Analog IP<br />Engineer</h4>
@@ -77,8 +79,8 @@
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <div class="ver_mas text-center">
-                  <span class=""></span>
+                <div class="ver_mas bg-primary text-center">
+                  <span class="text-dark fw-bold">MORE</span>
                 </div>
                 <article class="text-left">
                   <h4 class="text-white">IC Layout<br />Engineer</h4>
@@ -93,8 +95,8 @@
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <div class="ver_mas text-center">
-                  <span class=""></span>
+                <div class="ver_mas bg-primary text-center">
+                  <span class="text-dark fw-bold">MORE</span>
                 </div>
                 <article class="text-left">
                   <h4 class="text-white">Digital IP design<br />Engineer</h4>
@@ -109,8 +111,8 @@
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <div class="ver_mas text-center">
-                  <span class=""></span>
+                <div class="ver_mas bg-white text-center">
+                  <span class="text-dark fw-bold">MORE</span>
                 </div>
                 <article class="text-left">
                   <h4 class="text-white">More<br />Information</h4>
@@ -133,7 +135,7 @@
                 <validation-observer v-slot="{ invalid }">
                   <form class="mb-12" id="messageForm">
                     <fieldset>
-                      <legend class="mb-8 fs-3 text-center">
+                      <legend class="text-center text-dark fw-bold fs-3 mb-8">
                         {{ $t('GENERAL.NAV_OPTIONS[3]') }}
                       </legend>
                       <div class="row mb-6">

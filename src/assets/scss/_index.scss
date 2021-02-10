@@ -1,6 +1,6 @@
 .index {
   .intro {
-    background-image: url('~@/assets/img/main_cover.jpg');
+    background-image: url('~@/assets/img/main_cover_orange.jpg');
     @include bg-img(cover, center);
     @include media-breakpoint-down(md) {
       height: 100vh;
@@ -19,7 +19,7 @@
   }
 
   .jobs {
-    background-image: url('~@/assets/img/pattern.webp');
+    background-image: url('~@/assets/img/pattern.png');
     background-repeat: repeat;
     .container_foto {
       background-color: rgba(57, 62, 93, 0.7);
@@ -61,7 +61,6 @@
     }
 
     .ver_mas {
-      background-color: #feb66c;
       position: absolute;
       width: 100%;
       height: 45px;
@@ -75,7 +74,7 @@
         position: relative;
         margin: 0 auto;
         width: 100%;
-        top: 13px;
+        top: 11px;
       }
     }
   }
