@@ -55,7 +55,7 @@
         <div id="jobs-anchor"></div>
         <div class="jobs pt-11 pb-12 pt-lg-12 pb-lg-13 mt-12 mt-lg-13">
           <div class="container-fluid">
-            <div class="row no-gutters">
+            <div class="row">
               <h3 class="text-dark text-center fw-bold mb-8 mb-md-11">
                 {{ $t('GENERAL.NAV_OPTIONS[2]') }}
               </h3>
@@ -66,14 +66,11 @@
                 <div class="ver_mas bg-primary text-center">
                   <span class="text-dark fw-bold">MORE</span>
                 </div>
-                <article class="text-left">
-                  <h4 class="text-white">Analog IP<br />Engineer</h4>
+                <article class="text-left w-100">
+                  <h4 class="text-white">Analog IP Engineer</h4>
                   <h6 class="text-white">Cadence virtuoso, Spectre, AMS.</h6>
                 </article>
-                <img
-                  src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
-                  alt=""
-                />
+                <img src="./assets/img/jobs_1.jpg" alt="" />
               </div>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
@@ -82,14 +79,11 @@
                 <div class="ver_mas bg-primary text-center">
                   <span class="text-dark fw-bold">MORE</span>
                 </div>
-                <article class="text-left">
-                  <h4 class="text-white">IC Layout<br />Engineer</h4>
+                <article class="text-left w-100">
+                  <h4 class="text-white">IC Layout Engineer</h4>
                   <h6 class="text-white">PLL, ADC, IO, SerDes, DDR, PMIC, Bandgap</h6>
                 </article>
-                <img
-                  src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
-                  alt=""
-                />
+                <img src="./assets/img/jobs_2.jpg" alt="" />
               </div>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
@@ -98,14 +92,11 @@
                 <div class="ver_mas bg-primary text-center">
                   <span class="text-dark fw-bold">MORE</span>
                 </div>
-                <article class="text-left">
-                  <h4 class="text-white">Digital IP design<br />Engineer</h4>
+                <article class="text-left w-100">
+                  <h4 class="text-white">Digital IP design Engineer</h4>
                   <h6 class="text-white">RTL, SystemVerilog, front-end design flow.</h6>
                 </article>
-                <img
-                  src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
-                  alt=""
-                />
+                <img src="./assets/img/jobs_3.jpg" alt="" />
               </div>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
@@ -114,14 +105,11 @@
                 <div class="ver_mas bg-white text-center">
                   <span class="text-dark fw-bold">MORE</span>
                 </div>
-                <article class="text-left">
-                  <h4 class="text-white">More<br />Information</h4>
+                <article class="text-left w-100">
+                  <h4 class="text-white">More Information</h4>
                   <h6 class="text-white">Check out more about our job openings</h6>
                 </article>
-                <img
-                  src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
-                  alt=""
-                />
+                <img src="./assets/img/jobs_4.jpg" alt="" />
               </div>
             </div>
           </div>

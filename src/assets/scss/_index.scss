@@ -1,6 +1,6 @@
 .index {
   .intro {
-    background-image: url('~@/assets/img/main_cover_orange.jpg');
+    background-image: url('~@/assets/img/main_cover_orange_loss.jpg');
     @include bg-img(cover, center);
     @include media-breakpoint-down(md) {
       height: 100vh;
@@ -28,28 +28,31 @@
       position: relative;
 
       article {
-        padding: 9%;
+        background-color: rgba(60, 60, 60, 0.6);
+        padding: 9% 30px 9% 30px;
         position: absolute;
         bottom: 0;
         z-index: 1;
         transition: all .4s ease;
+        opacity: 1;
       }
 
       img {
         width: 100%;
         top: 0;
         left: 0;
-        opacity: 0.5;
-        transition: all .8s ease;
+        opacity: 1;
+        transition: all .6s ease;
       }
 
       &:hover {
         img {
-          opacity: 0.2;
+          opacity: 0.3;
           transform: scale(1.2);
         }
 
         article {
+          background-color: transparent;
           transform: translate(2px, -45px);
         }
 
