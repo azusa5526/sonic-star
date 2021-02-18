@@ -22,12 +22,10 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="min-width: 120px">
               <li>
-                <a class="dropdown-item" data-lang="tw" href="#" @click.prevent="setLang">中文</a>
+                <a class="dropdown-item" data-lang="tw" href="#" @click.prevent="setLang">CHT</a>
               </li>
               <li>
-                <a class="dropdown-item" data-lang="en" href="#" @click.prevent="setLang"
-                  >English</a
-                >
+                <a class="dropdown-item" data-lang="en" href="#" @click.prevent="setLang">EN</a>
               </li>
             </ul>
           </div>
@@ -88,6 +86,15 @@
                 :class="{ 'text-white': isTop, 'text-dark': !isTop }"
                 @click="hideNavbar"
                 >{{ $t('GENERAL.NAV_OPTIONS[3]') }}</a
+              >
+            </li>
+            <li class="nav-item px-md-2 px-xl-3">
+              <a
+                class="nav-link"
+                href="#information-anchor"
+                :class="{ 'text-white': isTop, 'text-dark': !isTop }"
+                @click="hideNavbar"
+                >{{ $t('GENERAL.NAV_OPTIONS[4]') }}</a
               >
             </li>
           </ul>

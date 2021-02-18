@@ -1,6 +1,6 @@
 .index {
   .intro {
-    background-image: url('~@/assets/img/main_cover_orange_loss.jpg');
+    background-image: url('~@/assets/img/main_cover_black.jpg');
     @include bg-img(cover, center);
     @include media-breakpoint-down(md) {
       height: 100vh;

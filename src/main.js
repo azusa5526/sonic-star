@@ -38,6 +38,7 @@ configure({
   }
 });
 
+// Global Loading component
 Vue.component('Loading', Loading);
 
 new Vue({

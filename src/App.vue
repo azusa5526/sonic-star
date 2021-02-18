@@ -9,7 +9,7 @@
           <div class="container position-relative h-100">
             <div class="slogan d-flex flex-column align-items-center w-100 px-6">
               <strong
-                class="h1 text-white text-center wow animate__animated animate__fadeInUp"
+                class="h1 text-light text-center wow animate__animated animate__fadeInUp"
                 data-wow-delay=".5s"
                 data-wow-duration=".5s"
                 >{{ $t('INTRO.TITLE') }}</strong
@@ -22,8 +22,8 @@
                 {{ $t('INTRO.SUBTITLE') }}
               </p>
               <a
-                class="btn btn-lg btn-outline-white border-2 fs-6 px-10 mt-12 wow animate__animated animate__fadeInUp"
-                href="#"
+                class="btn btn-lg btn-outline-light border-2 fs-6 px-10 mt-12 wow animate__animated animate__fadeInUp"
+                href="#jobs-anchor"
                 data-wow-delay=".5s"
                 data-wow-duration=".5s"
                 >{{ $t('INTRO.JOIN_US') }}</a
@@ -39,14 +39,13 @@
             <div class="d-flex flex-column align-items-center w-100">
               <h3 class="text-dark fw-bold mb-8 mb-md-11">{{ $t('GENERAL.NAV_OPTIONS[1]') }}</h3>
               <p class="fs-4 fw-light lh-lg px-4 px-md-0">
-                Sonic Star Global Ltd. (Sonic Star) is a professional silicon intellectual property
-                (IP) provider, with its principal office located in Hsinchu, Taiwan. Our strength is
-                in R&D and customer service. We focus on providing high-speed interface IPs,
-                mixed-mode circuit IPs, standard cell library solutions, and multimedia related
-                HW/SW solutions.
+                {{ $t('ABOUT.CONTENT') }}
               </p>
-              <a class="btn btn-lg btn-outline-dark border-2 fs-6 px-10 mt-6 mt-md-11" href="#"
-                >LEAEN MORE</a
+              <a
+                href="https://www.104.com.tw/company/1a2x6bl9de"
+                class="btn btn-lg btn-outline-dark border-2 fs-6 px-10 mt-6 mt-md-11"
+              >
+                {{ $t('ABOUT.LEARN_MORE') }}</a
               >
             </div>
           </div>
@@ -63,53 +62,61 @@
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <div class="ver_mas bg-primary text-center">
-                  <span class="text-dark fw-bold">MORE</span>
-                </div>
-                <article class="text-left w-100">
-                  <h4 class="text-white">Analog IP Engineer</h4>
-                  <h6 class="text-white">Cadence virtuoso, Spectre, AMS.</h6>
-                </article>
-                <img src="./assets/img/jobs_1.jpg" alt="" />
+                <a href="https://www.104.com.tw/job/736h2?jobsource=company_job">
+                  <div class="ver_mas bg-primary text-center">
+                    <span class="text-dark fw-bold">MORE</span>
+                  </div>
+                  <article class="text-left w-100">
+                    <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[0]') }}</h4>
+                    <h6 class="text-white">Cadence virtuoso, Spectre, AMS.</h6>
+                  </article>
+                  <img src="./assets/img/jobs_1.jpg" alt="" />
+                </a>
               </div>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <div class="ver_mas bg-primary text-center">
-                  <span class="text-dark fw-bold">MORE</span>
-                </div>
-                <article class="text-left w-100">
-                  <h4 class="text-white">IC Layout Engineer</h4>
-                  <h6 class="text-white">PLL, ADC, IO, SerDes, DDR, PMIC, Bandgap</h6>
-                </article>
-                <img src="./assets/img/jobs_2.jpg" alt="" />
+                <a href="https://www.104.com.tw/job/73j3y?jobsource=company_job">
+                  <div class="ver_mas bg-primary text-center">
+                    <span class="text-dark fw-bold">MORE</span>
+                  </div>
+                  <article class="text-left w-100">
+                    <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[1]') }}</h4>
+                    <h6 class="text-white">PLL, ADC, IO, SerDes, DDR, PMIC, Bandgap</h6>
+                  </article>
+                  <img src="./assets/img/jobs_2.jpg" alt="" />
+                </a>
               </div>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <div class="ver_mas bg-primary text-center">
-                  <span class="text-dark fw-bold">MORE</span>
-                </div>
-                <article class="text-left w-100">
-                  <h4 class="text-white">Digital IP design Engineer</h4>
-                  <h6 class="text-white">RTL, SystemVerilog, front-end design flow.</h6>
-                </article>
-                <img src="./assets/img/jobs_3.jpg" alt="" />
+                <a href="https://www.104.com.tw/job/73j6w?jobsource=company_job">
+                  <div class="ver_mas bg-primary text-center">
+                    <span class="text-dark fw-bold">MORE</span>
+                  </div>
+                  <article class="text-left w-100">
+                    <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[2]') }}</h4>
+                    <h6 class="text-white">RTL, SystemVerilog, front-end design flow.</h6>
+                  </article>
+                  <img src="./assets/img/jobs_3.jpg" alt="" />
+                </a>
               </div>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <div class="ver_mas bg-white text-center">
-                  <span class="text-dark fw-bold">MORE</span>
-                </div>
-                <article class="text-left w-100">
-                  <h4 class="text-white">More Information</h4>
-                  <h6 class="text-white">Check out more about our job openings</h6>
-                </article>
-                <img src="./assets/img/jobs_4.jpg" alt="" />
+                <a href="https://www.104.com.tw/company/1a2x6bl9de">
+                  <div class="ver_mas bg-white text-center">
+                    <span class="text-dark fw-bold">MORE</span>
+                  </div>
+                  <article class="text-left w-100">
+                    <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[3]') }}</h4>
+                    <h6 class="text-white">Check out more about our job openings</h6>
+                  </article>
+                  <img src="./assets/img/jobs_4.jpg" alt="" />
+                </a>
               </div>
             </div>
           </div>
@@ -119,7 +126,7 @@
         <div class="contact mt-12 mt-lg-13">
           <div class="container">
             <div class="message mt-11 mt-lg-12">
-              <div class="container-md">
+              <div class="container-md mb-12">
                 <validation-observer v-slot="{ invalid }">
                   <form class="mb-12" id="messageForm">
                     <fieldset>
@@ -182,16 +189,24 @@
                   </form>
                 </validation-observer>
                 <hr />
+                <div id="information-anchor"></div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="row">
-              <div class="col-12 col-lg-10 offset-lg-1 d-flex flex-column align-items-center mb-8">
-                <p class="fs-5">{{ $t('INFO.COMPANY_NAME') }}</p>
-                <p class="text-center fw-light">
-                  {{ $t('INFO.COMPANY_ADDRESS') }}
-                </p>
-              </div>
+        <div class="information mt-12 mt-lg-13">
+          <div class="container">
+            <div class="d-flex flex-column align-items-center w-100">
+              <h3 class="text-dark fw-bold mb-8 mb-md-11">{{ $t('GENERAL.NAV_OPTIONS[4]') }}</h3>
+              <iframe
+                frameborder="0"
+                style="border: 0"
+                class="bg-primary w-100"
+                height="450px"
+                :src="map"
+              >
+              </iframe>
             </div>
           </div>
         </div>
@@ -246,7 +261,9 @@ export default {
       email: '',
       subject: '',
       message: '',
-      modalMessage: ''
+      modalMessage: '',
+      map:
+        'https://www.google.com/maps/embed/v1/place?key=AIzaSyBXitEQP7jnr_pd3_-u2BYf3i4whaYpXVM&q=302新竹縣竹北市復興三路二段168號一樓(英屬維京群島商爍星有限公司)'
     };
   },
 
