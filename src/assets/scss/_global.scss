@@ -40,6 +40,14 @@ ul {
   }
 }
 
+.navbar-toggler {
+  border: 0;
+  &:focus {
+    border: 0;
+    box-shadow: 0 0 0 0;
+  }
+}
+
 .mask {
   position: absolute;
   top: 0;
@@ -48,10 +56,6 @@ ul {
   left: 0;
   background-color: rgba(41, 41, 41, 0.5);
   z-index: 90;
-}
-
-.bg-glass {
-  backdrop-filter: blur(10px);
 }
 
 .absolute-center {

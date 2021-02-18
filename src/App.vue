@@ -22,7 +22,7 @@
                 {{ $t('INTRO.SUBTITLE') }}
               </p>
               <a
-                class="btn btn-lg btn-outline-light border-2 fs-6 px-10 mt-12 wow animate__animated animate__fadeInUp"
+                class="btn btn-lg btn-outline-primary border-1 fs-6 fw-bold px-10 mt-12 wow animate__animated animate__fadeInUp"
                 href="#jobs-anchor"
                 data-wow-delay=".5s"
                 data-wow-duration=".5s"
@@ -37,13 +37,15 @@
         <div class="about mt-12 mt-lg-13">
           <div class="container">
             <div class="d-flex flex-column align-items-center w-100">
-              <h3 class="text-dark fw-bold mb-8 mb-md-11">{{ $t('GENERAL.NAV_OPTIONS[1]') }}</h3>
+              <h3 class="text-dark fw-bold mb-8 mb-md-11">
+                {{ $t('GENERAL.NAV_OPTIONS[1]') }}<span class="text-primary fs-1">.</span>
+              </h3>
               <p class="fs-4 fw-light lh-lg px-4 px-md-0">
                 {{ $t('ABOUT.CONTENT') }}
               </p>
               <a
                 href="https://www.104.com.tw/company/1a2x6bl9de"
-                class="btn btn-lg btn-outline-dark border-2 fs-6 px-10 mt-6 mt-md-11"
+                class="btn btn-lg btn-outline-dark border-1 fs-6 fw-bold px-10 mt-6 mt-md-11"
               >
                 {{ $t('ABOUT.LEARN_MORE') }}</a
               >
@@ -56,7 +58,7 @@
           <div class="container-fluid">
             <div class="row">
               <h3 class="text-dark text-center fw-bold mb-8 mb-md-11">
-                {{ $t('GENERAL.NAV_OPTIONS[2]') }}
+                {{ $t('GENERAL.NAV_OPTIONS[2]') }}<span class="text-primary fs-1">.</span>
               </h3>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
@@ -130,9 +132,9 @@
                 <validation-observer v-slot="{ invalid }">
                   <form class="mb-12" id="messageForm">
                     <fieldset>
-                      <legend class="text-center text-dark fw-bold fs-3 mb-8">
-                        {{ $t('GENERAL.NAV_OPTIONS[3]') }}
-                      </legend>
+                      <h3 class="text-dark text-center fw-bold mb-8 mb-md-11">
+                        {{ $t('GENERAL.NAV_OPTIONS[3]') }}<span class="text-primary fs-1">.</span>
+                      </h3>
                       <div class="row mb-6">
                         <div class="col-12 col-lg-4 mb-4">
                           <validation-provider rules="required" v-slot="{ errors }">
@@ -179,7 +181,7 @@
 
                       <button
                         type="submit"
-                        class="btn btn-lg btn-outline-dark border-2 fs-6 px-6"
+                        class="btn btn-lg btn-outline-dark border-1 fs-6 fw-bold px-6"
                         :disabled="invalid"
                         @click.prevent="sendEmail()"
                       >
@@ -198,7 +200,9 @@
         <div class="information mt-12 mt-lg-13">
           <div class="container">
             <div class="d-flex flex-column align-items-center w-100">
-              <h3 class="text-dark fw-bold mb-8 mb-md-11">{{ $t('GENERAL.NAV_OPTIONS[4]') }}</h3>
+              <h3 class="text-dark fw-bold mb-8 mb-md-11">
+                {{ $t('GENERAL.NAV_OPTIONS[4]') }}<span class="text-primary fs-1">.</span>
+              </h3>
               <iframe
                 frameborder="0"
                 style="border: 0"
@@ -263,7 +267,7 @@ export default {
       message: '',
       modalMessage: '',
       map:
-        'https://www.google.com/maps/embed/v1/place?key=AIzaSyBXitEQP7jnr_pd3_-u2BYf3i4whaYpXVM&q=302新竹縣竹北市復興三路二段168號一樓(英屬維京群島商爍星有限公司)'
+        `https://www.google.com/maps/embed/v1/place?key=${process.env.VUE_APP_GCP_API_KEY}&q=302新竹縣竹北市復興三路二段168號一樓(英屬維京群島商爍星有限公司)`
     };
   },
 
@@ -271,8 +275,8 @@ export default {
     sendEmail() {
       this.isLoading = true;
       Email.send({
-        SecureToken: '26a67c6e-d769-46af-8565-78acadf6cefd',
-        To: 'azusa5526@gmail.com',
+        SecureToken: process.env.VUE_APP_SECURE_TOKEN,
+        To: process.env.VUE_APP_EMAIL_ADDRESS,
         From: this.email,
         Subject: `${this.name}: ${this.subject}`,
         Body: this.message

@@ -1,7 +1,7 @@
 export const locale = {
   GENERAL: {
     LANG: 'EN',
-    NAV_OPTIONS: ['Home', 'About', 'Jobs', 'Contact', 'Map'],
+    NAV_OPTIONS: ['Home', 'About', 'Jobs', 'Contact', 'Location'],
     MAP_LANG: 'en'
   },
   INTRO: {
