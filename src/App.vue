@@ -37,13 +37,14 @@
         <div class="about mt-12 mt-lg-13">
           <div class="container">
             <div class="d-flex flex-column align-items-center w-100">
-              <h3 class="text-dark fw-bold mb-8 mb-md-11">
+              <h2 class="text-dark fs-3 fw-bold mb-8 mb-md-11">
                 {{ $t('GENERAL.NAV_OPTIONS[1]') }}<span class="text-primary fs-1">.</span>
-              </h3>
+              </h2>
               <p class="fs-4 fw-light lh-lg px-4 px-md-0">
                 {{ $t('ABOUT.CONTENT') }}
               </p>
               <a
+                rel="canonical"
                 href="https://www.104.com.tw/company/1a2x6bl9de"
                 class="btn btn-lg btn-outline-dark border-1 fs-6 fw-bold px-10 mt-6 mt-md-11"
               >
@@ -57,14 +58,14 @@
         <div class="jobs pt-11 pb-12 pt-lg-12 pb-lg-13 mt-12 mt-lg-13">
           <div class="container-fluid">
             <div class="row">
-              <h3 class="text-dark text-center fw-bold mb-8 mb-md-11">
+              <h2 class="text-dark text-center fs-3 fw-bold mb-8 mb-md-11">
                 {{ $t('GENERAL.NAV_OPTIONS[2]') }}<span class="text-primary fs-1">.</span>
-              </h3>
+              </h2>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <a href="https://www.104.com.tw/job/736h2?jobsource=company_job">
+                <a rel="canonical" href="https://www.104.com.tw/job/736h2?jobsource=company_job">
                   <div class="ver_mas bg-primary text-center">
                     <span class="text-dark fw-bold">MORE</span>
                   </div>
@@ -72,14 +73,14 @@
                     <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[0]') }}</h4>
                     <h6 class="text-white">Cadence virtuoso, Spectre, AMS.</h6>
                   </article>
-                  <img src="./assets/img/jobs_1.jpg" alt="" />
+                  <img src="./assets/img/jobs_1.jpg" alt="jobs-img" />
                 </a>
               </div>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <a href="https://www.104.com.tw/job/73j3y?jobsource=company_job">
+                <a rel="canonical" href="https://www.104.com.tw/job/73j3y?jobsource=company_job">
                   <div class="ver_mas bg-primary text-center">
                     <span class="text-dark fw-bold">MORE</span>
                   </div>
@@ -87,14 +88,14 @@
                     <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[1]') }}</h4>
                     <h6 class="text-white">PLL, ADC, IO, SerDes, DDR, PMIC, Bandgap</h6>
                   </article>
-                  <img src="./assets/img/jobs_2.jpg" alt="" />
+                  <img src="./assets/img/jobs_2.jpg" alt="jobs-img" />
                 </a>
               </div>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <a href="https://www.104.com.tw/job/73j6w?jobsource=company_job">
+                <a rel="canonical" href="https://www.104.com.tw/job/73j6w?jobsource=company_job">
                   <div class="ver_mas bg-primary text-center">
                     <span class="text-dark fw-bold">MORE</span>
                   </div>
@@ -102,14 +103,14 @@
                     <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[2]') }}</h4>
                     <h6 class="text-white">RTL, SystemVerilog, front-end design flow.</h6>
                   </article>
-                  <img src="./assets/img/jobs_3.jpg" alt="" />
+                  <img src="./assets/img/jobs_3.jpg" alt="jobs-img" />
                 </a>
               </div>
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <a href="https://www.104.com.tw/company/1a2x6bl9de">
+                <a rel="canonical" href="https://www.104.com.tw/company/1a2x6bl9de">
                   <div class="ver_mas bg-white text-center">
                     <span class="text-dark fw-bold">MORE</span>
                   </div>
@@ -117,7 +118,7 @@
                     <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[3]') }}</h4>
                     <h6 class="text-white">Check out more about our job openings</h6>
                   </article>
-                  <img src="./assets/img/jobs_4.jpg" alt="" />
+                  <img src="./assets/img/jobs_4.jpg" alt="jobs-img" />
                 </a>
               </div>
             </div>
@@ -132,9 +133,9 @@
                 <validation-observer v-slot="{ invalid }">
                   <form class="mb-12" id="messageForm">
                     <fieldset>
-                      <h3 class="text-dark text-center fw-bold mb-8 mb-md-11">
+                      <h2 class="text-dark text-center fs-3 fw-bold mb-8 mb-md-11">
                         {{ $t('GENERAL.NAV_OPTIONS[3]') }}<span class="text-primary fs-1">.</span>
-                      </h3>
+                      </h2>
                       <div class="row mb-6">
                         <div class="col-12 col-lg-4 mb-4">
                           <validation-provider rules="required" v-slot="{ errors }">
@@ -200,9 +201,9 @@
         <div class="information mt-12 mt-lg-13">
           <div class="container">
             <div class="d-flex flex-column align-items-center w-100">
-              <h3 class="text-dark fw-bold mb-8 mb-md-11">
+              <h2 class="text-dark fs-3 fw-bold mb-8 mb-md-11">
                 {{ $t('GENERAL.NAV_OPTIONS[4]') }}<span class="text-primary fs-1">.</span>
-              </h3>
+              </h2>
               <iframe
                 frameborder="0"
                 style="border: 0"
@@ -266,8 +267,7 @@ export default {
       subject: '',
       message: '',
       modalMessage: '',
-      map:
-        `https://www.google.com/maps/embed/v1/place?key=${process.env.VUE_APP_GCP_API_KEY}&q=302新竹縣竹北市復興三路二段168號一樓(英屬維京群島商爍星有限公司)`
+      map: `https://www.google.com/maps/embed/v1/place?key=${process.env.VUE_APP_GCP_API_KEY}&q=302新竹縣竹北市復興三路二段168號一樓(英屬維京群島商爍星有限公司)`
     };
   },
 
