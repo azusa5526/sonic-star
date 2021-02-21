@@ -44,7 +44,7 @@
                 {{ $t('ABOUT.CONTENT') }}
               </p>
               <a
-                rel="canonical"
+
                 href="https://www.104.com.tw/company/1a2x6bl9de"
                 class="btn btn-lg btn-outline-dark border-1 fs-6 fw-bold px-10 mt-6 mt-md-11"
               >
@@ -65,7 +65,7 @@
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <a rel="canonical" href="https://www.104.com.tw/job/736h2?jobsource=company_job">
+                <a href="https://www.104.com.tw/job/736h2?jobsource=company_job">
                   <div class="ver_mas bg-primary text-center">
                     <span class="text-dark fw-bold">MORE</span>
                   </div>
@@ -80,7 +80,7 @@
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <a rel="canonical" href="https://www.104.com.tw/job/73j3y?jobsource=company_job">
+                <a href="https://www.104.com.tw/job/73j3y?jobsource=company_job">
                   <div class="ver_mas bg-primary text-center">
                     <span class="text-dark fw-bold">MORE</span>
                   </div>
@@ -95,7 +95,7 @@
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <a rel="canonical" href="https://www.104.com.tw/job/73j6w?jobsource=company_job">
+                <a href="https://www.104.com.tw/job/73j6w?jobsource=company_job">
                   <div class="ver_mas bg-primary text-center">
                     <span class="text-dark fw-bold">MORE</span>
                   </div>
@@ -110,7 +110,7 @@
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
               >
-                <a rel="canonical" href="https://www.104.com.tw/company/1a2x6bl9de">
+                <a href="https://www.104.com.tw/company/1a2x6bl9de">
                   <div class="ver_mas bg-white text-center">
                     <span class="text-dark fw-bold">MORE</span>
                   </div>
