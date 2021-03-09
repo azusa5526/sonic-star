@@ -4,7 +4,7 @@
     <Navbar></Navbar>
     <div class="wrapper">
       <main class="index">
-        <div id="intro-anchor"></div>
+        <div id="home-anchor"></div>
         <div class="intro">
           <div class="container position-relative h-100">
             <div class="slogan d-flex flex-column align-items-center w-100 px-6">
@@ -44,7 +44,6 @@
                 {{ $t('ABOUT.CONTENT') }}
               </p>
               <a
-
                 href="https://www.104.com.tw/company/1a2x6bl9de"
                 class="btn btn-lg btn-outline-dark border-1 fs-6 fw-bold px-10 mt-6 mt-md-11"
               >
@@ -64,62 +63,37 @@
               <div
                 class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-duration=".5s"
-              >
-                <a href="https://www.104.com.tw/job/736h2?jobsource=company_job">
-                  <div class="ver_mas bg-primary text-center">
-                    <span class="text-dark fw-bold">MORE</span>
-                  </div>
-                  <article class="text-left w-100">
-                    <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[0]') }}</h4>
-                    <h6 class="text-white">Cadence virtuoso, Spectre, AMS.</h6>
-                  </article>
-                  <img src="./assets/img/jobs_1.jpg" alt="jobs-img" />
-                </a>
-              </div>
-              <div
-                class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
-                data-wow-duration=".5s"
-              >
-                <a href="https://www.104.com.tw/job/73j3y?jobsource=company_job">
-                  <div class="ver_mas bg-primary text-center">
-                    <span class="text-dark fw-bold">MORE</span>
-                  </div>
-                  <article class="text-left w-100">
-                    <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[1]') }}</h4>
-                    <h6 class="text-white">PLL, ADC, IO, SerDes, DDR, PMIC, Bandgap</h6>
-                  </article>
-                  <img src="./assets/img/jobs_2.jpg" alt="jobs-img" />
-                </a>
-              </div>
-              <div
-                class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
-                data-wow-duration=".5s"
-              >
-                <a href="https://www.104.com.tw/job/73j6w?jobsource=company_job">
-                  <div class="ver_mas bg-primary text-center">
-                    <span class="text-dark fw-bold">MORE</span>
-                  </div>
-                  <article class="text-left w-100">
-                    <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[2]') }}</h4>
-                    <h6 class="text-white">RTL, SystemVerilog, front-end design flow.</h6>
-                  </article>
-                  <img src="./assets/img/jobs_3.jpg" alt="jobs-img" />
-                </a>
-              </div>
-              <div
-                class="col-12 col-md-6 col-xl-3 container_foto mb-4 mb-md-0 wow animate__animated animate__fadeInUp"
-                data-wow-duration=".5s"
+                v-for="(job, index) in jobContent"
+                :key="index"
               >
                 <a href="https://www.104.com.tw/company/1a2x6bl9de">
-                  <div class="ver_mas bg-white text-center">
+                  <div class="ver_mas bg-primary text-center">
                     <span class="text-dark fw-bold">MORE</span>
                   </div>
-                  <article class="text-left w-100">
-                    <h4 class="text-white">{{ $t('JOBS.TITLE_OPTIONS[3]') }}</h4>
-                    <h6 class="text-white">Check out more about our job openings</h6>
+                  <article class="job-article text-left w-100">
+                    <h4 class="text-white text-row-1">{{ job.title }}</h4>
+                    <h6 class="text-white text-row-2 mb-0">{{ job.subtitle }}</h6>
                   </article>
-                  <img src="./assets/img/jobs_4.jpg" alt="jobs-img" />
+                  <img :src="require('./assets/img/jobs_' + (index + 1) + '.jpg')" alt="jobs-img" />
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="benefits-anchor"></div>
+        <div class="benefits mt-12 mt-lg-13">
+          <div class="container">
+            <div class="d-flex flex-column align-items-center w-100">
+              <h2 class="text-dark fs-3 fw-bold mb-8 mb-md-11">
+                {{ $t('GENERAL.NAV_OPTIONS[3]') }}<span class="text-primary fs-1">.</span>
+              </h2>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 mb-10" v-for="(benefit, index) in benefitsContent" :key="index">
+                <i class="fas fa-heartbeat"></i>
+                <h4>{{ benefit.title }}</h4>
+                <h6>{{ benefit.subtitle }}</h6>
               </div>
             </div>
           </div>
@@ -134,7 +108,7 @@
                   <form class="mb-12" id="messageForm">
                     <fieldset>
                       <h2 class="text-dark text-center fs-3 fw-bold mb-8 mb-md-11">
-                        {{ $t('GENERAL.NAV_OPTIONS[3]') }}<span class="text-primary fs-1">.</span>
+                        {{ $t('GENERAL.NAV_OPTIONS[4]') }}<span class="text-primary fs-1">.</span>
                       </h2>
                       <div class="row mb-6">
                         <div class="col-12 col-lg-4 mb-4">
@@ -192,7 +166,7 @@
                   </form>
                 </validation-observer>
                 <hr />
-                <div id="information-anchor"></div>
+                <div id="location-anchor"></div>
               </div>
             </div>
           </div>
@@ -202,16 +176,16 @@
           <div class="container">
             <div class="d-flex flex-column align-items-center w-100">
               <h2 class="text-dark fs-3 fw-bold mb-8 mb-md-11">
-                {{ $t('GENERAL.NAV_OPTIONS[4]') }}<span class="text-primary fs-1">.</span>
+                {{ $t('GENERAL.NAV_OPTIONS[5]') }}<span class="text-primary fs-1">.</span>
               </h2>
-              <iframe
+              <!-- <iframe
                 frameborder="0"
                 style="border: 0"
                 class="bg-primary w-100"
                 height="450px"
                 :src="map"
               >
-              </iframe>
+              </iframe> -->
             </div>
           </div>
         </div>
@@ -267,7 +241,9 @@ export default {
       subject: '',
       message: '',
       modalMessage: '',
-      map: `https://www.google.com/maps/embed/v1/place?key=${process.env.VUE_APP_GCP_API_KEY}&q=302新竹縣竹北市復興三路二段168號一樓(英屬維京群島商爍星有限公司)`
+      map: `https://www.google.com/maps/embed/v1/place?key=${process.env.VUE_APP_GCP_API_KEY}&q=302新竹縣竹北市復興三路二段168號一樓(英屬維京群島商爍星有限公司)`,
+      jobContent: [],
+      benefitsContent: []
     };
   },
 
@@ -293,12 +269,32 @@ export default {
           this.isLoading = false;
           emailModal.show();
         });
+    },
+
+    fillJobsContent() {
+      for (let i = 0; i < this.$t('JOBS.TITLE_OPTIONS').length; i++) {
+        this.jobContent.push({
+          title: this.$t(`JOBS.TITLE_OPTIONS[${i}]`),
+          subtitle: this.$t(`JOBS.SUBTITLE_OPTIONS[${i}]`)
+        });
+      }
+    },
+
+    fillBenifitsContent() {
+      for (let i = 0; i < this.$t('BENIFITS.TITLE_OPTIONS').length; i++) {
+        this.benefitsContent.push({
+          title: this.$t(`BENIFITS.TITLE_OPTIONS[${i}]`),
+          subtitle: this.$t(`BENIFITS.SUBTITLE_OPTIONS[${i}]`)
+        });
+      }
     }
   },
 
   mounted() {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    this.fillJobsContent();
+    this.fillBenifitsContent();
   }
 };
 </script>

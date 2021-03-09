@@ -1,7 +1,8 @@
 export const locale = {
   GENERAL: {
     LANG: 'CHT',
-    NAV_OPTIONS: ['首頁', '關於我們', '工作機會', '聯絡我們', '位置資訊'],
+    NAV_OPTIONS: ['首頁', '關於我們', '工作機會', '員工福利', '聯絡我們', '位置資訊'],
+    NAV_ANCHOR_OPTIONS: ['#home-anchor', '#about-anchor', '#jobs-anchor', '#benefits-anchor', '#contact-anchor', '#location-anchor'],
     MAP_LANG: 'cht'
   },
   INTRO: {
@@ -15,7 +16,8 @@ export const locale = {
     LEARN_MORE: '了解更多'
   },
   JOBS: {
-    TITLE_OPTIONS: ['類比 IP 工程師', 'IC Layout 工程師', '數位 IP 設計工程師', '更多工作資訊']
+    TITLE_OPTIONS: ['混合信號類比/數位設計專家', '類比IP設計專家', '多媒體軟體/硬體設計專家', '更多工作資訊'],
+    SUBTITLE_OPTIONS: ['DCDC Buck, Boost, Lighting, AMOLED Driver', 'High speed DLL, PLL, DDRIO design', 'Android, 3A, ISP, Algorithm, AI, RTL, Modeling', 'More Information']
   },
   CONTACT: {
     NAME: '您的姓名 (必填)',

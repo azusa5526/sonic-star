@@ -72,3 +72,11 @@ ul {
 :root {
   --animate-delay: 0.5s !important;
 }
+
+.text-row-1 {
+  @include rowLimiter(1);
+}
+
+.text-row-2 {
+  @include rowLimiter(2);
+}
