@@ -37,7 +37,7 @@
         <div class="about mt-12 mt-lg-13">
           <div class="container">
             <div class="d-flex flex-column align-items-center w-100">
-              <h2 class="text-dark fs-3 fw-bold mb-8 mb-md-11">
+              <h2 class="text-dark fs-3 fw-bold ps-3 mb-8 mb-md-11">
                 {{ $t('GENERAL.NAV_OPTIONS[1]') }}<span class="text-primary fs-1">.</span>
               </h2>
               <p class="fs-4 fw-light lh-lg px-4 px-md-0">
@@ -57,7 +57,7 @@
         <div class="jobs pt-11 pb-12 pt-lg-12 pb-lg-13 mt-12 mt-lg-13">
           <div class="container-fluid">
             <div class="row">
-              <h2 class="text-dark text-center fs-3 fw-bold mb-8 mb-md-11">
+              <h2 class="text-dark text-center fs-3 fw-bold pe-3 mb-8 mb-md-11">
                 {{ $t('GENERAL.NAV_OPTIONS[2]') }}<span class="text-primary fs-1">.</span>
               </h2>
               <div
@@ -80,20 +80,30 @@
             </div>
           </div>
         </div>
-
+        
         <div id="benefits-anchor"></div>
-        <div class="benefits mt-12 mt-lg-13">
+        <div class="benefits py-11 py-lg-13">
           <div class="container">
-            <div class="d-flex flex-column align-items-center w-100">
-              <h2 class="text-dark fs-3 fw-bold mb-8 mb-md-11">
+            <div class="d-flex flex-column align-items-center w-100 mb-6">
+              <h2 class="text-light fs-3 fw-bold ps-3 mb-4 mb-md-11">
                 {{ $t('GENERAL.NAV_OPTIONS[3]') }}<span class="text-primary fs-1">.</span>
               </h2>
             </div>
             <div class="row">
-              <div class="col-12 col-md-6 mb-10" v-for="(benefit, index) in benefitsContent" :key="index">
-                <i class="fas fa-heartbeat"></i>
-                <h4>{{ benefit.title }}</h4>
-                <h6>{{ benefit.subtitle }}</h6>
+              <div
+                class="col-12 col-md-6 ps-xl-12 mb-10 mb-md-12"
+                v-for="(benefit, index) in benefitsContent"
+                :key="index"
+              >
+                <div class="d-flex flex-row">
+                  <svg class="benifits-icon text-primary mx-5 mx-md-8">
+                    <use :xlink:href="benefit.imgName" />
+                  </svg>
+                  <div class="benifits-contnet">
+                    <h4 class="text-light">{{ benefit.title }}</h4>
+                    <h6 class="text-gray fw-light">{{ benefit.subtitle }}</h6>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -107,7 +117,7 @@
                 <validation-observer v-slot="{ invalid }">
                   <form class="mb-12" id="messageForm">
                     <fieldset>
-                      <h2 class="text-dark text-center fs-3 fw-bold mb-8 mb-md-11">
+                      <h2 class="text-dark text-center fs-3 fw-bold ps-3 mb-8 mb-md-11">
                         {{ $t('GENERAL.NAV_OPTIONS[4]') }}<span class="text-primary fs-1">.</span>
                       </h2>
                       <div class="row mb-6">
@@ -175,7 +185,7 @@
         <div class="information mt-12 mt-lg-13">
           <div class="container">
             <div class="d-flex flex-column align-items-center w-100">
-              <h2 class="text-dark fs-3 fw-bold mb-8 mb-md-11">
+              <h2 class="text-dark fs-3 fw-bold ps-3 mb-8 mb-md-11">
                 {{ $t('GENERAL.NAV_OPTIONS[5]') }}<span class="text-primary fs-1">.</span>
               </h2>
               <!-- <iframe
@@ -225,6 +235,11 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Email from '@/assets/js/smtp.js';
 import Modal from 'bootstrap/js/dist/modal';
+
+import '@/assets/icon/dollar.svg';
+import '@/assets/icon/insurance.svg';
+import '@/assets/icon/holiday.svg';
+import '@/assets/icon/health.svg';
 
 export default {
   name: 'App',
@@ -284,7 +299,8 @@ export default {
       for (let i = 0; i < this.$t('BENIFITS.TITLE_OPTIONS').length; i++) {
         this.benefitsContent.push({
           title: this.$t(`BENIFITS.TITLE_OPTIONS[${i}]`),
-          subtitle: this.$t(`BENIFITS.SUBTITLE_OPTIONS[${i}]`)
+          subtitle: this.$t(`BENIFITS.SUBTITLE_OPTIONS[${i}]`),
+          imgName: this.$t(`BENIFITS.IMG_NAME_OPTIONS[${i}]`)
         });
       }
     }

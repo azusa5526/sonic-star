@@ -2,8 +2,7 @@ export const locale = {
   GENERAL: {
     LANG: 'CHT',
     NAV_OPTIONS: ['首頁', '關於我們', '工作機會', '員工福利', '聯絡我們', '位置資訊'],
-    NAV_ANCHOR_OPTIONS: ['#home-anchor', '#about-anchor', '#jobs-anchor', '#benefits-anchor', '#contact-anchor', '#location-anchor'],
-    MAP_LANG: 'cht'
+    NAV_ANCHOR_OPTIONS: ['#home-anchor', '#about-anchor', '#jobs-anchor', '#benefits-anchor', '#contact-anchor', '#location-anchor']
   },
   INTRO: {
     TITLE: '英屬維京群島商爍星有限公司台灣分公司',
@@ -18,6 +17,11 @@ export const locale = {
   JOBS: {
     TITLE_OPTIONS: ['混合信號類比/數位設計專家', '類比IP設計專家', '多媒體軟體/硬體設計專家', '更多工作資訊'],
     SUBTITLE_OPTIONS: ['DCDC Buck, Boost, Lighting, AMOLED Driver', 'High speed DLL, PLL, DDRIO design', 'Android, 3A, ISP, Algorithm, AI, RTL, Modeling', 'More Information']
+  },
+  BENIFITS: {
+    TITLE_OPTIONS: ['Higher Salary', 'Employee Insurance', 'Flexible Holiday', 'Health Care Plan'],
+    SUBTITLE_OPTIONS: ['Better salary than competitors and extra bonus', 'Comprehensive employee insurance', 'Holiday better than competitors', 'Health check to take care of your health'],
+    IMG_NAME_OPTIONS: ['#dollar', '#insurance', '#holiday', '#health']
   },
   CONTACT: {
     NAME: '您的姓名 (必填)',

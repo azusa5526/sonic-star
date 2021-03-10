@@ -1,9 +1,8 @@
 export const locale = {
   GENERAL: {
     LANG: 'EN',
-    NAV_OPTIONS: ['Home', 'About', 'Jobs', 'benefits', 'Contact', 'Location'],
-    NAV_ANCHOR_OPTIONS: ['#home-anchor', '#about-anchor', '#jobs-anchor', '#benefits-anchor', '#contact-anchor', '#location-anchor'],
-    MAP_LANG: 'en'
+    NAV_OPTIONS: ['Home', 'About', 'Jobs', 'Benefits', 'Contact', 'Location'],
+    NAV_ANCHOR_OPTIONS: ['#home-anchor', '#about-anchor', '#jobs-anchor', '#benefits-anchor', '#contact-anchor', '#location-anchor']
   },
   INTRO: {
     TITLE: 'Sonic Star Global Limited Taiwan Branch',
@@ -20,7 +19,8 @@ export const locale = {
   },
   BENIFITS: {
     TITLE_OPTIONS: ['Higher Salary', 'Employee Insurance', 'Flexible Holiday', 'Health Care Plan'],
-    SUBTITLE_OPTIONS: ['Better salary than competitors and extra bonus', 'Comprehensive employee insurance', 'Holiday better than competitors', 'Health, dental, and vision benefits for you']
+    SUBTITLE_OPTIONS: ['Better salary than competitors and extra bonus', 'Comprehensive employee insurance', 'Holiday better than competitors', 'Health check to take care of your health'],
+    IMG_NAME_OPTIONS: ['#dollar', '#insurance', '#holiday', '#health']
   },
   CONTACT: {
     NAME: 'Your Name (required)',
@@ -31,7 +31,7 @@ export const locale = {
   },
   INFO: {
     TITLE: ['Address', 'Support Info'],
-    COMPANY_NAME: 'Sonic Star Global Ltd.',
+    COMPANY_NAME: 'Sonic Star Global Limited Taiwan Branch',
     COMPANY_ADDRESS: '10F.-2, No. 168, Sec. 2, Fuxing 3rd Rd., Zhubei City, Hsinchu County 302'
   }
 };

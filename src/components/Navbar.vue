@@ -53,7 +53,7 @@
         >
           <ul class="navbar-nav me-1 me-md-4" data-wow-duration=".5s">
             <li
-              class="nav-item px-md-2 px-xl-3"
+              class="nav-item px-md-1 px-xl-3"
               v-for="(navOption, index) in navOptions"
               :key="index"
             >
