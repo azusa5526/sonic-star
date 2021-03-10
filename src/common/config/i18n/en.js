@@ -2,7 +2,7 @@ export const locale = {
   GENERAL: {
     LANG: 'EN',
     NAV_OPTIONS: ['Home', 'About', 'Jobs', 'Benefits', 'Contact', 'Location'],
-    NAV_ANCHOR_OPTIONS: ['#home-anchor', '#about-anchor', '#jobs-anchor', '#benefits-anchor', '#contact-anchor', '#location-anchor']
+    NAV_ANCHOR_OPTIONS: ['#home-anchor', '#about-anchor', '#jobs-anchor', '#benefits-anchor', '#contact-anchor', '#information-anchor']
   },
   INTRO: {
     TITLE: 'Sonic Star Global Limited Taiwan Branch',

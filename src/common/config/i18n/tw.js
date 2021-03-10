@@ -2,7 +2,7 @@ export const locale = {
   GENERAL: {
     LANG: 'CHT',
     NAV_OPTIONS: ['首頁', '關於我們', '工作機會', '員工福利', '聯絡我們', '位置資訊'],
-    NAV_ANCHOR_OPTIONS: ['#home-anchor', '#about-anchor', '#jobs-anchor', '#benefits-anchor', '#contact-anchor', '#location-anchor']
+    NAV_ANCHOR_OPTIONS: ['#home-anchor', '#about-anchor', '#jobs-anchor', '#benefits-anchor', '#contact-anchor', '#information-anchor']
   },
   INTRO: {
     TITLE: '英屬維京群島商爍星有限公司台灣分公司',
@@ -19,8 +19,8 @@ export const locale = {
     SUBTITLE_OPTIONS: ['DCDC Buck, Boost, Lighting, AMOLED Driver', 'High speed DLL, PLL, DDRIO design', 'Android, 3A, ISP, Algorithm, AI, RTL, Modeling', 'More Information']
   },
   BENIFITS: {
-    TITLE_OPTIONS: ['Higher Salary', 'Employee Insurance', 'Flexible Holiday', 'Health Care Plan'],
-    SUBTITLE_OPTIONS: ['Better salary than competitors and extra bonus', 'Comprehensive employee insurance', 'Holiday better than competitors', 'Health check to take care of your health'],
+    TITLE_OPTIONS: ['優渥的薪資水平', '完備的員工保險', '彈性的休假政策', '身體健康的照護'],
+    SUBTITLE_OPTIONS: ['優於同業競爭者的薪資水準以及額外的工作獎金', '全面且完備的員工保險加保', '更加彈性且優於同業競爭者的休假政策', '定期性的全面健康檢查守護你的健康'],
     IMG_NAME_OPTIONS: ['#dollar', '#insurance', '#holiday', '#health']
   },
   CONTACT: {

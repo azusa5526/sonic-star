@@ -18,6 +18,12 @@
     transform: translate(-50%, -50%);
   }
 
+  .about {
+    background-image: url('~@/assets/img/about_cover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .jobs {
     background-image: url('~@/assets/img/pattern.png');
     background-repeat: repeat;
@@ -90,6 +96,7 @@
     background-image: url('~@/assets/img/benifits_cover.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     .benifits-icon {
       max-width: 55px;
       max-height: 55px;
@@ -102,17 +109,17 @@
     }
   }
 
-  #benefits-anchor {
+  #about-anchor, #jobs-anchor, #benefits-anchor, #contact-anchor {
     display: block;
     position: relative;
-    top: -50px;
+    top: -40px;
     visibility: hidden;
   }
 
-  #jobs-anchor {
+  #information-anchor {
     display: block;
     position: relative;
-    top: 40px;
+    top: -80px;
     visibility: hidden;
   }
 }

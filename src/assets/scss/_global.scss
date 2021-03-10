@@ -58,6 +58,10 @@ ul {
   z-index: 90;
 }
 
+.bg-glass {
+  backdrop-filter: blur(7px);
+}
+
 .absolute-center {
   position: absolute;
   top: 50%;
