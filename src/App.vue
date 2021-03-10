@@ -34,7 +34,7 @@
         </div>
 
         <div id="about-anchor"></div>
-        <div class="about py-12 py-lg-13">
+        <div class="about py-12 py-lg-14">
           <div class="container">
             <div class="d-flex flex-column align-items-center w-100">
               <h2 class="text-dark fs-3 fw-bold ps-3 mb-8 mb-md-11">
