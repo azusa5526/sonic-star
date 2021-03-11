@@ -36,10 +36,14 @@
         <div id="about-anchor"></div>
         <div class="about py-12 py-lg-14">
           <div class="container">
-            <div class="d-flex flex-column align-items-center w-100">
-              <h2 class="text-dark fs-3 fw-bold ps-3 mb-8 mb-md-11">
-                {{ $t('GENERAL.NAV_OPTIONS[1]') }}<span class="text-primary fs-1">.</span>
-              </h2>
+            <h2 class="text-dark text-center fs-3 fw-bold ps-3 mb-8 mb-md-11">
+              {{ $t('GENERAL.NAV_OPTIONS[1]') }}<span class="text-primary fs-1">.</span>
+            </h2>
+            <div
+              class="d-flex flex-column align-items-center w-100 wow animate__animated animate__fadeInUp"
+              data-wow-delay=".5s"
+              data-wow-duration=".5s"
+            >
               <p class="fs-4 fw-light lh-lg px-4 px-md-0">
                 {{ $t('ABOUT.CONTENT') }}
               </p>
@@ -92,7 +96,11 @@
                   {{ $t('GENERAL.NAV_OPTIONS[3]') }}<span class="text-primary fs-1">.</span>
                 </h2>
               </div>
-              <div class="row">
+              <div
+                class="row wow animate__animated animate__fadeInUp"
+                data-wow-duration=".5s"
+                data-wow-delay=".5s"
+              >
                 <div
                   class="col-12 col-md-6 ps-xl-12 mb-10 mb-md-12"
                   v-for="(benefit, index) in benefitsContent"

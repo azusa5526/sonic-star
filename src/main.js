@@ -18,7 +18,7 @@ Vue.use(animated);
 new WOW({
   boxClass: 'wow',
   animateClass: 'animated',
-  offset: 40,
+  offset: 65,
   mobile: true,
   live: true,
   resetAnimation: true
