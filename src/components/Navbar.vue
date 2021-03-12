@@ -52,49 +52,17 @@
           id="navbarNav"
         >
           <ul class="navbar-nav me-1 me-md-4" data-wow-duration=".5s">
-            <li class="nav-item px-md-2 px-xl-3">
+            <li
+              class="nav-item px-md-1 px-xl-3"
+              v-for="(navOption, index) in navOptions"
+              :key="index"
+            >
               <a
                 class="nav-link"
-                href="#intro-anchor"
+                :href="navLink[index]"
                 :class="{ 'text-white': isTop, 'text-dark': !isTop }"
                 @click="hideNavbar"
-                >{{ $t('GENERAL.NAV_OPTIONS[0]') }}</a
-              >
-            </li>
-            <li class="nav-item px-md-2 px-xl-3">
-              <a
-                class="nav-link"
-                href="#about-anchor"
-                :class="{ 'text-white': isTop, 'text-dark': !isTop }"
-                @click="hideNavbar"
-                >{{ $t('GENERAL.NAV_OPTIONS[1]') }}</a
-              >
-            </li>
-            <li class="nav-item px-md-2 px-xl-3">
-              <a
-                class="nav-link"
-                href="#jobs-anchor"
-                :class="{ 'text-white': isTop, 'text-dark': !isTop }"
-                @click="hideNavbar"
-                >{{ $t('GENERAL.NAV_OPTIONS[2]') }}</a
-              >
-            </li>
-            <li class="nav-item px-md-2 px-xl-3">
-              <a
-                class="nav-link"
-                href="#contact-anchor"
-                :class="{ 'text-white': isTop, 'text-dark': !isTop }"
-                @click="hideNavbar"
-                >{{ $t('GENERAL.NAV_OPTIONS[3]') }}</a
-              >
-            </li>
-            <li class="nav-item px-md-2 px-xl-3">
-              <a
-                class="nav-link"
-                href="#information-anchor"
-                :class="{ 'text-white': isTop, 'text-dark': !isTop }"
-                @click="hideNavbar"
-                >{{ $t('GENERAL.NAV_OPTIONS[4]') }}</a
+                >{{ navOption }}</a
               >
             </li>
           </ul>
@@ -110,7 +78,9 @@ export default {
   components: {},
   data() {
     return {
-      isTop: true
+      isTop: true,
+      navOptions: this.$t('GENERAL.NAV_OPTIONS'),
+      navLink: this.$t('GENERAL.NAV_ANCHOR_OPTIONS')
     };
   },
 

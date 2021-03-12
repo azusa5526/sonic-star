@@ -17,7 +17,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
+  .about {
+    background-image: url('~@/assets/img/about_cover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .jobs {
     background-image: url('~@/assets/img/pattern.png');
     background-repeat: repeat;
@@ -29,12 +35,16 @@
 
       article {
         background-color: rgba(60, 60, 60, 0.6);
-        padding: 9% 30px 9% 30px;
+        padding: 7% 20px 5% 20px;
         position: absolute;
         bottom: 0;
         z-index: 1;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
         opacity: 1;
+
+        h6 {
+          height: 40px;
+        }
       }
 
       img {
@@ -42,7 +52,7 @@
         top: 0;
         left: 0;
         opacity: 1;
-        transition: all .6s ease;
+        transition: all 0.6s ease;
       }
 
       &:hover {
@@ -53,7 +63,7 @@
 
         article {
           background-color: transparent;
-          transform: translate(2px, -45px);
+          transform: translate(0px, -45px);
         }
 
         .ver_mas {
@@ -82,9 +92,37 @@
     }
   }
 
+  .benefits {
+    background-image: url('~@/assets/img/benifits_cover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .benifits-icon {
+      max-width: 55px;
+      max-height: 55px;
+    }
+  }
+
   .contact {
     textarea {
       min-height: 150px;
     }
+  }
+
+  #about-anchor,
+  #jobs-anchor,
+  #benefits-anchor,
+  #contact-anchor {
+    display: block;
+    position: relative;
+    top: -40px;
+    visibility: hidden;
+  }
+
+  #information-anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
   }
 }
