@@ -7,7 +7,7 @@
       <div class="container-fluid">
         <div class="d-flex align-items-center">
           <h1 class="fs-4 ps-4 ps-md-6 mb-0">
-            <a href="#" :class="{ 'text-white': isTop, 'text-dark': !isTop }">Sonic Star</a>
+            <a href="#" :class="{ 'text-white': isTop, 'text-dark': !isTop }">Sonicstar</a>
           </h1>
           <div class="dropdown ps-4 ps-md-6">
             <button

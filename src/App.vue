@@ -252,6 +252,8 @@ import '@/assets/icon/dollar.svg';
 import '@/assets/icon/insurance.svg';
 import '@/assets/icon/holiday.svg';
 import '@/assets/icon/health.svg';
+import '@/assets/icon/cup.svg';
+import '@/assets/icon/plane.svg';
 
 export default {
   name: 'App',

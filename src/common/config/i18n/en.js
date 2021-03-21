@@ -6,7 +6,7 @@ export const locale = {
   },
   INTRO: {
     TITLE: 'Sonic Star Global Limited Taiwan Branch',
-    SUBTITLE: 'Results driven, Transparency, Speak out, Move across the boundary.',
+    SUBTITLE: 'Integrity、Result Driven、Trust with Transparency、Move Across the Boundary、Listen in and Speak out',
     JOIN_US: 'Join Us'
   },
   ABOUT: {
@@ -15,12 +15,12 @@ export const locale = {
   },
   JOBS: {
     TITLE_OPTIONS: ['Analog IP Engineer', 'IC Layout Engineer', 'Digital IP design Engineer', 'More Information'],
-    SUBTITLE_OPTIONS: ['DCDC Buck, Boost, Lighting, AMOLED Driver', 'High speed DLL, PLL, DDRIO design', 'Android, 3A, ISP, Algorithm, AI, RTL, Modeling', 'More Information']
+    SUBTITLE_OPTIONS: ['Charge Pump, LDO, Buck/Boost, AMOLED Driver, SERDES, Audio Driver, Audio CODEC, Clocking', 'High speed DLL, PLL, DDRIO, High speed PHY, ADC, DAC', '3A, ISP, Display, Algorithm, AI, RTL, FW', 'More Information']
   },
   BENIFITS: {
-    TITLE_OPTIONS: ['Higher Salary', 'Employee Insurance', 'Flexible Holiday', 'Health Care Plan'],
-    SUBTITLE_OPTIONS: ['Better salary than competitors and extra bonus', 'Comprehensive employee insurance', 'Holiday better than competitors', 'Health check to take care of your health'],
-    IMG_NAME_OPTIONS: ['#dollar', '#insurance', '#holiday', '#health']
+    TITLE_OPTIONS: ['Higher Salary', 'Employee Insurance', 'Flexible Holiday', 'Health Care Plan', 'Benefits', 'Company trip'],
+    SUBTITLE_OPTIONS: ['Better salary levels and work bonuses than competitors', 'In addition to labor insurance, health insurance, and labor pension funds, it also provides group insurance for employees', 'Vacation system superior to the law: flexible vacation, special vacation', 'Health check to take care of your health.', 'Staff birthday party, irregular dinner and afternoon tea supply', 'Domestic Tourism, family day, year-end party, company establishment anniversary celebration.'],
+    IMG_NAME_OPTIONS: ['#dollar', '#insurance', '#holiday', '#health', '#cup', '#plane']
   },
   CONTACT: {
     NAME: 'Your Name (required)',
