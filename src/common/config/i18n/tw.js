@@ -6,7 +6,7 @@ export const locale = {
   },
   INTRO: {
     TITLE: '英屬維京群島商爍星有限公司台灣分公司',
-    SUBTITLE: '誠信正直、目標導向、信任透明、突破框架、有效溝通',
+    SUBTITLE: ['誠信正直', '目標導向', '信任透明', '突破框架', '有效溝通'],
     JOIN_US: '加入我們'
   },
   ABOUT: {

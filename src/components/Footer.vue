@@ -10,7 +10,7 @@
             <p class="text-gray fw-light mb-3">
               {{ $t('INFO.COMPANY_ADDRESS') }}
             </p>
-            <a href="https://fontawesome.com/license" class="text-gray fw-light">Icon cite the source link</a>
+            <a href="https://fontawesome.com/license" class="text-gray fw-light">Icon cite source link</a>
           </div>
         </div>
       </div>

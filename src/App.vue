@@ -9,23 +9,25 @@
           <div class="container position-relative h-100">
             <div class="slogan d-flex flex-column align-items-center w-100 px-4">
               <strong
-                class="h1 text-light text-center wow animate__animated animate__fadeInUp"
+                class="h1 text-light text-center mb-8 wow animate__animated animate__fadeInUp"
                 data-wow-delay=".5s"
                 data-wow-duration=".5s"
                 >{{ $t('INTRO.TITLE') }}</strong
               >
-              <p
-                class="text-light text-center fw-light fs-5 mt-4 wow animate__animated animate__fadeInUp"
-                data-wow-delay=".5s"
-                data-wow-duration=".5s"
-              >
-                {{ $t('INTRO.SUBTITLE') }}
-              </p>
+
+              <div class="d-flex flex-column wow animate__animated animate__fadeInUp">
+                <p
+                  v-for="(subtitle, index) in introSubtitleContent"
+                  :key="index"
+                  class="text-light text-center fw-light fs-5 mb-3"
+                >
+                  {{ subtitle }}
+                </p>
+              </div>
+
               <a
-                class="btn btn-lg btn-outline-primary border-1 fs-6 fw-bold px-10 mt-11 wow animate__animated animate__fadeInUp"
+                class="btn btn-lg btn-outline-primary border-1 fs-6 fw-bold px-10 mt-11 animate__animated animate__fadeInUp"
                 href="#jobs-anchor"
-                data-wow-delay=".5s"
-                data-wow-duration=".5s"
                 >{{ $t('INTRO.JOIN_US') }}</a
               >
             </div>
@@ -272,7 +274,8 @@ export default {
       modalMessage: '',
       map: `https://www.google.com/maps/embed/v1/place?key=${process.env.VUE_APP_GCP_API_KEY}&q=302新竹縣竹北市復興三路二段168號一樓(英屬維京群島商爍星有限公司)`,
       jobContent: [],
-      benefitsContent: []
+      benefitsContent: [],
+      introSubtitleContent: []
     };
   },
 
@@ -317,6 +320,12 @@ export default {
           imgName: this.$t(`BENIFITS.IMG_NAME_OPTIONS[${i}]`)
         });
       }
+    },
+
+    fillIntroSubtitleContent() {
+      for (let i = 0; i < this.$t('INTRO.SUBTITLE').length; i++) {
+        this.introSubtitleContent.push(this.$t(`INTRO.SUBTITLE[${i}]`));
+      }
     }
   },
 
@@ -325,6 +334,7 @@ export default {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     this.fillJobsContent();
     this.fillBenifitsContent();
+    this.fillIntroSubtitleContent();
   }
 };
 </script>

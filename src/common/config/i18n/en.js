@@ -6,7 +6,7 @@ export const locale = {
   },
   INTRO: {
     TITLE: 'Sonic Star Global Limited Taiwan Branch',
-    SUBTITLE: 'Integrity、Result Driven、Trust with Transparency、Move Across the Boundary、Listen in and Speak out',
+    SUBTITLE: ['Integrity', 'Result Driven', 'Trust with Transparency', 'Move Across the Boundary', 'Listen in and Speak out'],
     JOIN_US: 'Join Us'
   },
   ABOUT: {
